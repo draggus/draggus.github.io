@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <!--sivukohtainen tyyli-->
+        <style>
+            h2 {color: blueviolet;}
+        </style>
+        <!--linkki ulkopuoliseen tyylitiedostoon-->
+        <link href="tyyli.css" rel="stylesheet"></link>
+        <title>Tico Cafe</title>
+        <!--koodisto-->
+        <meta charset="utf-8">
+        <meta name="author" content="Jontte">
+        <meta name="description" content="Kahvila Pasilan sydämmessä">
+
+        <!--skaalaantuvuus oikein eri resoluutiolla oleville päätelaitteille-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<img src="tiedostonimi.loppuliite" alt="alternative teksti kuvalle" id="css pohjan määritelmä kuvalle" class="keskitys" todennäköisesti css määritys keskitykselle-->
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+        <h1>Tico Cafe - Pullantuoksuinen kahvila Pasilan sydämmessä</h1>
+        <figure class="keskitys">
+        <img src="kahvi1.jpg" alt="kuva kahvikupista" id="kahvi" width="10%">
+        <figcaption>Maistuisiko kuppi kuumaa?</figcaption><!--kuvateksti-->
+        <img src="kahvi1.jpg" alt="kuva kahvikupista" id="kahvi" width="10%">
+        <figcaption>Taikka santsikuppi?</figcaption><!--kuvateksti-->
+        </figure>
+        <!--Absoluuttinen linkki-->
+        <!--a href="https://www.w3schools.com/" target= "_blank">W3schools </a>-->
+
+        <py-script src="calculator.py"></py-script>
+        <button id="play-button">Calculator</button>
+
+        <nav>
+            <a href="index.html">Etusivu</a>
+            <a href="palvelut.html">Palvelut</a>
+            <a href="tuotteet.html">Tuotteet</a>
+        </nav>
+        <div class="sidebar">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="about">About</a>
+        </div>
+    </header>
+        <article>
+            <h2 style="color:rgb(130, 69, 26)">Unohtumaton Kokemus</h2>        
+        <p id="eka">Täällä on tosi hyvää</p>
+        <h2>Tämä on paras kahvila</h2>
+        <p>Meiltä saat myöskin ruokaa &nbsp; &amp; &nbsp; jäätelöä </p>
+        <h2>Toinen Väliotsikko</h2>
+        <footer>&copy;Jontte</footer>
+</article>
+</main>
+    </body>
+</html>
