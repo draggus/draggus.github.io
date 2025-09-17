@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rochester&display=swap');
+
+*{box-sizing: border-box;} /* laatikon leveys pysyy samana vaikka padding arvoa tulee */
+/* font-size: 10-20vw; responsiivinen title fontti, font-size:1-2vw; responsiivinen leipäteksti fontti */
+
+body {color: darkslategrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+    margin: 10px 5px;}
+    /*background-image: taustakuvana toimiva kuva laitetaan url(kuvan linkki)
+    backround-size: cover tekee taustan kokonaan peitetyksi
+    background-attachment: fixed kiinnittää taustan paikalleen ettei rullaa sitä? tmv
+    background-repeat: kuinka monta kertaa toistaa taustakuvaa jos liian pieni
+    */
+main {background-color: aquamarine;
+    padding: 20px 0px;
+    border: solid 2px darkcyan;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;}
+h1 {color: darkorchid;
+    font-family: "Libre Baskerville";
+    text-align: center;}
+h2 {color: blueviolet;
+    font-family: "Gloria Hallelujah";
+    text-align: center;}
+#eka {color: aliceblue;
+    font-family: "Rochester";
+}    
+
+
+
+/*.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.rochester-regular {
+  font-family: "Rochester", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+main {width:100%; /* suhteellinen leveys */
+    max-width:1200px; /*Maksimileveys */
+    margin: auto; /* Lohkon keskitys */
+    background-color: transparent;
+    padding:15px;
+    border-radius:10%; /*reunojen pyöristys*/
+    border:3px rgb(51, 26, 26) dotted; /*pisteytetty reunustus*/
+    box-shadow: 8px 8px 10px 10px darkolivegreen; /*hohtoefekti*/
+    text-shadow: 5px 5px magenta; /*syöpäsen näköstä tekstiä*/
+}
