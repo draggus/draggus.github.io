@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <!--sivukohtainen tyyli-->
+        <style>@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');</style>
+        <!--linkki ulkopuoliseen tyylitiedostoon-->
+        <link href="tyyli.css" rel="stylesheet"></link>
+        <title>Jontte Portfolio</title>
+        <!--koodisto-->
+        <meta charset="utf-8">
+        <meta name="author" content="Jontte">
+        <meta name="description" content="Digitaalinen Portfolio">
+
+        <!--skaalaantuvuus oikein eri resoluutiolla oleville päätelaitteille-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<img src="tiedostonimi.loppuliite" alt="alternative teksti kuvalle" id="css pohjan määritelmä kuvalle" class="keskitys" todennäköisesti css määritys keskitykselle-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          body {
+            background-image: url(frontpage3.png);
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: contain;
+          }
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        .openbtn {
+          font-size: 20px;
+          cursor: pointer;
+          background-color: #111;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+        }
+        
+        .openbtn:hover {
+          background-color: #444;
+        }
+        
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+          .sidebar {padding-top: 15px;}
+          .sidebar a {font-size: 18px;}
+        }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+        <h1>My digital portfolio, work in progress</h1>
+        <figure class="keskitys">
+        <img align="left" src="frontpage1.jpg" alt="kuva tietokoneesta sekä pelaajasta" id="frontpage1" width="20%">
+        <figcaption style="color: #111;">One of my favourite hobbies</figcaption><!--kuvateksti-->
+        <img align="right" src="frontpage2.jpg" alt="kuva koodinpätkästä" id="frontpage2" width="20%">
+        <figcaption align="right" style="color: #111;">And also something im trying to get better at</figcaption><!--kuvateksti-->
+        </figure>
+    </header>
+        <article>
+            <h2 style="color:rgb(0, 0, 0)">This page is a work in progress</h2>        
+        <p id="eka">While the start of making this webpage was due to it being part of a course im currently on, there might be some merit to actually making it look like a normal webpage in the future.
+          For now it's just going to get a frontpage, along with some links to my hobbies&skills and also ways to contact me in the future. The page highlights what im interested about and it's trying to show
+          the skills I possess also, but most likely a webpage isn't the best way to demonstrate that.
+        </p>
+        <footer>&copy;Jontte</footer>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="draggus.github.io/index.html">Frontpage</a>
+            <a href="draggus.github.io/hobbies.html">Hobbies</a>
+            <a href="draggus.github.io/skills.html">Skills</a>
+            <a href="draggus.github.io/contact.html">Contact</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()" ondblclick="closeNav()">☰ Menu</button>  
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+</article>
+</main>
+    </body>
+</html>

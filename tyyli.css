@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{box-sizing: border-box;} /* laatikon leveys pysyy samana vaikka padding arvoa tulee */
+/* font-size: 10-20vw; responsiivinen title fontti, font-size:1-2vw; responsiivinen leipäteksti fontti */
+
+body {color: darkslategrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+    margin: 10px 5px;}
+    /*background-image: taustakuvana toimiva kuva laitetaan url(kuvan linkki)
+    backround-size: cover tekee taustan kokonaan peitetyksi
+    background-attachment: fixed kiinnittää taustan paikalleen ettei rullaa sitä? tmv
+    background-repeat: kuinka monta kertaa toistaa taustakuvaa jos liian pieni
+    */
+main {background-color: aquamarine;
+    padding: 20px 0px;
+    border: solid 2px darkcyan;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;}
+h1 {color:  #34495E;
+    font-family: "Libre Baskerville";
+    text-align: center;
+  filter: contrast(110%);}
+h2 {color: blueviolet;
+    font-family: "Libre Baskerville";
+    text-align: center;
+  filter: contrast(110%);}
+#eka {color:  #000000;
+    font-family: "Libre Baskerville";
+    filter: contrast(110%);
+}
+#frontpage2 {
+  filter: contrast(110%);
+}    
+#frontpage1 {
+  filter: contrast(110%);
+}
+
+/*.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.rochester-regular {
+  font-family: "Rochester", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+main {width:100%; /* suhteellinen leveys */
+    max-width:1200px; /*Maksimileveys */
+    margin: auto; /* Lohkon keskitys */
+    background-color: transparent;
+    padding:15px;
+}
+@media (max-width:800px){
+  h1 {font-size:30px;}
+  h2 {font-size:20px; color: indigo;}
+}
+@media (max-width:500px){
+  h1 {font-size:15px;}
+  h2 {font-size:10px; color: blanchedalmond;}
+}
+@media (min-width:801px){
+  h1 {font-size:45px;}
+  h2 {font-size:30px; color:orange}
+}
